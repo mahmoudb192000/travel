@@ -1,0 +1,777 @@
+<!doctype html> 
+<html>
+   <head>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="icons/links/1/css/all.css">
+      <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <title> MAHMOUD1 </title>
+      <style>
+         body{
+         background-color:white;
+         }
+         .n1{
+         background-color: white;
+         position: fixed;
+         width: 100%;
+         height: 80px;
+         z-index: 15;
+         }
+         .n2{
+         background-color: white;
+         margin-left: 45%;
+         margin-top: 30px;
+         }
+         .n3{
+         text-align: center;
+         background-color: black;
+         width: 100%;
+         height: 70px;
+         }
+         .b1{
+         float: right;
+         display:inline;
+         height: 50px;
+         width: 50px;
+         margin: 15px;
+         border: none;
+         background-color: white;
+         }
+         .b1:hover{
+         background-color: darkgray;
+         color: red;
+         }
+         .b2{
+         width: 200px;
+         height: 60px;
+         border: none;
+         background-color: white;
+         }
+         .b2:hover{
+         background-color:black;
+         color: white;
+         }
+         h4{
+         display: inline;
+         margin: 30px;
+         float: left;
+         }
+         h1{
+         color: white;
+         }
+         .d1{
+         background-color:white;
+         width: 90%;
+         height: 1600px;
+         margin-left: 80px;
+         }
+         .d2{
+         background-color:darkslategray;
+         width: 90%;
+         height: 2050px;
+         margin-left: 80px;
+         }
+         .d3{
+         background-color:darkslategray;
+         width: 50%;
+         height: 2050px;
+         margin-left: 25%;
+         }
+         .d4{
+         background-color:white;
+         width: 50%;
+         height: 550px;
+         margin-left: 25%;
+         }
+         .d5{
+         background-color:grey;
+         width: 90%;
+         height: 300px;
+         margin-left: 80px;
+         }
+         .d6:hover{
+         background-color: black;
+         color: white;
+         }
+         .img1{
+         width: 100%;
+         height: 500px;
+         border: none;
+         }
+         .img1:hover{
+         opacity: .5;
+         }
+         .img2{
+         width: 100%;
+         height: 400px;
+         }
+         .grid1 {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         grid-gap: 0px;
+         }
+         .img4{
+         width: 20%;
+         height: 50px;
+         margin-top: 25px;
+         margin-left: 25px;
+         }
+         .grid2 {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-gap: 10px;
+         width: 100%;
+         height: 500px;
+         }
+         .grid3{
+         display: grid;
+         grid-template-columns: repeat(9, 1fr);
+         grid-gap: 10px;
+         }
+         .p1{
+         color: white;
+         font-size: 30px;
+         text-align: center;
+         }
+         .p2{
+         color: white;
+         font-size: 20px;
+         }
+         .p3{
+         color: white;
+         font-size: 15px;
+         }
+         .p4{
+         text-align: center;
+         font-size: 20px;
+         padding-top: 40px;
+         }
+         .p5{
+         font-size: 25px;
+         }
+         .progress{
+         height: 30px;
+         width: 100%;
+         }
+         .card1{
+         width: 49%;
+         height: 600px;
+         background-color: cadetblue;
+         float:left;
+         }
+         .card2{
+         width: 49%;
+         height: 600px;
+         background-color: cadetblue;
+         float:right;
+         }
+         .card-header{
+         background-color: black;
+         height: 20%;
+         text-align: center;
+         color: white;
+         }
+         .btn{
+         margin-top: 30px;
+         }
+         .card-body{
+         text-align: center;                             
+         }
+         .img3{
+         height: 80px;
+         width: 100px;  
+         }
+         .m1{
+         width: 83%;	  
+         }
+         .page-link{
+         border: none!important;
+         }
+         .page-link:hover{
+         background-color: black!important;
+         color: white;
+         }
+         .s1{
+         width: 100%;
+         height: 100px;
+         }
+         .s1:hover{
+         background-color: black;
+         color: white;
+         }
+         .d8{
+         text-align: center;
+         width: 100%;
+         height: 100%;
+         display: none;
+         background-color: black;
+         opacity: .9;
+         position: fixed;
+         z-index: 10;
+         }
+         .d7{
+         width: 10%;
+         height: 100%;
+         background-color:red;
+         opacity: .9;
+         position: relative;
+         float: right;
+         }
+         .a1{
+         color: white;
+         display: block;
+         margin-top: 200px;
+         background-color: black;
+         font-size: 25px;
+         }
+         h4 {
+         animation: zoomIn;
+         animation-duration: 3s;
+         animation-iteration-count: infinite;
+         }
+         .d9{
+         background-color: black;
+         width: 100%;
+         height: 100%;
+         display: none;
+         text-align: center;
+         position: fixed;
+         z-index: 40;
+         color: white;
+         }
+         .a2{
+         margin-top: 150px;
+         height: 500px;
+         width: 500px;
+         }
+         .grid4 {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         grid-gap: 0px;
+         display: none;
+         }
+         @media screen and (max-width: 1000px) {
+         .m1{
+         width: 71%;
+         }
+         .d1{
+         width: 100%;
+         margin-left: 0px;
+         height: 1600px;
+         }
+         .n2{
+         margin-left: 40%;
+         margin-top: 30px;
+         }
+         .d2{
+         width: 100%;
+         margin-left: 0px;
+         height: 2100px;
+         }
+         .d3{
+         width: 60%;
+         margin-left: 200px;
+         margin-right: 200px;
+         height: 2100px;
+         }
+         .d4{
+         width: 60%;
+         height: 550px;
+         margin-left: 20%;
+         }
+         .grid2{
+         grid-template-columns: repeat(3, 1fr);
+         grid-gap: 0px;
+         width: 100%;
+         height: 500px;
+         margin-left: 0px;
+         margin-right: 0px;
+         }
+         .d5{
+         width: 100%;
+         height: 300px;
+         margin-left: 0px;
+         }
+         .n3{
+         width: 100%;
+         height: 70px;
+         }
+         .n3 h1 {
+         font-size: 50px;
+         }
+         .grid3{
+         grid-template-columns: repeat(5, 1fr);
+         }
+         .d7{
+         width: 20%;
+         }
+         }
+         @media screen and (max-width: 600px) {
+         .m1{
+         width: 41%;
+         }
+         .d2{
+         width: 100%;
+         margin-left: 0px;
+         height: 2750px;
+         }
+         .d1{
+         width: 100%;
+         margin-left: 0px;
+         height: 6050px;
+         }
+         .d3{
+         width: 95%;
+         margin-left: 10px ;
+         margin-right: 10px ;
+         height: 2750px;
+         }
+         .grid1 {
+         grid-template-columns: repeat(1, 1fr);
+         }
+         .n2{
+         margin-left: 33%;
+         margin-top: 6px;
+         }
+         .card1{
+         width: 95%;
+         margin-left: 10px ;
+         margin-right: 10px ;
+         }
+         .card2{
+         width: 95%;
+         margin-left: 10px ;
+         margin-right: 10px ;
+         }
+         .d4{
+         width: 90%;
+         height: 550px;
+         margin-left: 20px;
+         }
+         .d5{
+         width: 100%;
+         height: 600px;
+         margin-left: 0px;
+         }
+         .grid2{
+         grid-template-columns: repeat(1, 1fr);
+         grid-gap: 0px;
+         width: 95%;
+         height: 500px;
+         margin-left: 15px ;
+         margin-right: 15px ;
+         }
+         .n3{
+         text-align: left;
+         width: 100%;
+         height: 70px;
+         }
+         .n3 h1 {
+         font-size: 25px;
+         }
+         .grid3{
+         grid-template-columns: repeat(5, 1fr);
+         }
+         .d7{
+         width: 30%;
+         }
+         }  
+      </style>
+   </head>
+   <body>
+      <nav class="n1" id="n1">
+         <h4> SOME NAME </h4>
+         <marquee class="m1" direction="right" behavior="scroll" scrollamount="5">
+            <img src="photo/118.gif" class="img3">
+         </marquee>
+         <button onclick="show()" class="b1" id="b1">
+         <i class="fas fa-align-justify"> </i>
+         </button>
+      </nav>
+      <div class="d8" id="d2" onclick="no()">
+         <div class="d7" id="d1">
+            <a href="#b1" class="a1"  onclick="a1()">close </a>
+            <a href="#d3" class="a1" onclick="a2()" >About </a>
+            <a href="#p1" class="a1" onclick="a3()"> contact </a>
+         </div>
+      </div>
+      <div class="d9" id="d6"  onclick="no1()">
+         <img src="photo/110.jpg" class="a2">
+         <P>What a beautiful scenery this sunset</P>
+      </div>
+      <div class="d9" id="d7" onclick="no2()">
+         <img src="photo/109.jpg" class="a2">
+         <P>A boy surrounded by beautiful nature</P>
+      </div>
+      <div class="d9" id="d8" onclick="no3()">
+         <img src="photo/108.jpg" class="a2">
+         <P>Canoeing again</P>
+      </div>
+      <div class="d9" id="d9" onclick="no4()">
+         <img src="photo/107.jpg" class="a2">
+         <P>The Beach. Me. Alone. Beautiful</P>
+      </div>
+      <div class="d9" id="d10" onclick="no5()">
+         <img src="photo/106.jpg" class="a2">
+         <P>Quiet day at the beach. Cold, but beautiful</P>
+      </div>
+      <div class="d9" id="d11" onclick="no6()">
+         <img src="photo/105.jpg" class="a2">
+         <P>A girl, and a train passing</P>
+      </div>
+      <div class="d9" id="d12" onclick="no7()">
+         <img src="photo/104.jpg" class="a2">
+         <P>Waiting for the bus in the desert </P>
+      </div>
+      <div class="d9" id="d13" onclick="no8()">
+         <img src="photo/103.jpg" class="a2">
+         <P>Decorations </P>
+      </div>
+      <div class="d9" id="d14" onclick="no9()">
+         <img src="photo/102.jpg" class="a2">
+         <P> dressy</P>
+      </div>
+      <div class="d9" id="d15" onclick="no10()">
+         <img src="photo/101.jpg" class="a2">
+         <P> organisation</P>
+      </div>
+      <div class="d9" id="d16" onclick="no11()">
+         <img src="photo/90.jpg" class="a2">
+         <P>dignity </P>
+      </div>
+      <div class="d9" id="d17" onclick="no12()">
+         <img src="photo/19.jpg" class="a2">
+         <P>Clean green space </P>
+      </div>
+      <div class="d1" id="d5">
+         <div class="grid1" id="g2">
+            <div>   <a href="#d6" onclick="img1()">  <img src="photo/110.jpg" class="img1" >  </a> </div>
+            <div> <a href="#d7" onclick="img2()"> <img src="photo/109.jpg" class="img1" > </a></div>
+            <div> <a href="#d8" onclick="img3()"> <img src="photo/108.jpg" class="img1"> </a></div>
+            <div> <a href="#d9" onclick="img4()"> <img src="photo/107.jpg" class="img1"> </a></div>
+            <div> <a href="#d10" onclick="img5()"> <img src="photo/106.jpg" class="img1"></a> </div>
+            <div> <a href="#d11" onclick="img6()"> <img src="photo/105.jpg" class="img1"> </a></div>
+            <div> <a href="#d12" onclick="img7()"> <img src="photo/104.jpg" class="img1"> </a></div>
+            <div> <a href="#d13" onclick="img8()"> <img src="photo/103.jpg" class="img1"> </a></div>
+            <div> <a href="#d14" onclick="img9()">  <img src="photo/102.jpg" class="img1"> </a></div>
+            <div> <a href="#d15" onclick="img10()"> <img src="photo/101.jpg" class="img1"> </a></div>
+            <div> <a href="#d16" onclick="img11()"> <img src="photo/90.jpg" class="img1"> </a></div>
+            <div> <a href="#d17" onclick="img12()"> <img src="photo/19.jpg" class="img1"> </a></div>
+         </div>
+         <nav aria-label="Page navigation example"  class="n2">
+            <ul class="pagination">
+               <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  </a>
+               </li>
+               <li class="page-item"><a class="page-link" href="#" onclick="show1()">1</a></li>
+               <li class="page-item"><a class="page-link" href="#">2</a></li>
+               <li class="page-item"><a class="page-link" href="#">3</a></li>
+               <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+      <div class="d2" id="d3">
+         <div class="d3">
+            <p class="p1">About Me</p>
+            <div><img src="photo/28.jpg" class="img2"></div>
+            <br>
+            <p class="p2"> My Name </p>
+            <p class="p3">
+               Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="p3"> 
+               mail: example@example.com
+            </p>
+            <p class="p3">
+               tel: 5353 35531
+            </p>
+            <hr color="#FFFFFF">
+            <br>
+            <p class="p2">Technical Skills</p>
+            <br>
+            <p class="p3">Photography</p>
+            <div class="progress">
+               <div class="progress-bar" role="progressbar" style="width: 90%;" >90%</div>
+            </div>
+            <br>
+            <p class="p3">Web Design
+            </p>
+            <div class="progress">
+               <div class="progress-bar" role="progressbar" style="width: 80%;"  >80%</div>
+            </div>
+            <br>
+            <p class="p3">Photoshop</p>
+            <div class="progress">
+               <div class="progress-bar" role="progressbar" style="width: 75%; " >75%</div>
+            </div>
+            <br>
+            <br>
+            <button class="b2"> Download Resume  </button>
+            <br>
+            <br>
+            <hr color="#FFFFFF">
+            <br>
+            <p class="p2">How much I charge</p>
+            <br>
+            <div class="card1 mb-4 shadow-sm">
+               <div class="card-header">
+                  <h5 class="my-0 font-weight-normal mt-4">Basic</h5>
+               </div>
+               <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                     Web Design 
+                     <hr>
+                     <small class="text-muted">Photography</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                     <hr>
+                     <li>5GB Storage</li>
+                     <hr>
+                     <li>Mail Support</li>
+                     <hr>
+                     <li>Email support</li>
+                     <hr>
+                     <li>$ 10</li>
+                     <li>per month</li>
+                  </ul>
+                  <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign up </button>
+               </div>
+            </div>
+            <div class="card2 mb-4 shadow-sm">
+               <div class="card-header">
+                  <h5 class="my-0 font-weight-normal mt-4">Basic</h5>
+               </div>
+               <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                     Web Design 
+                     <hr>
+                     <small class="text-muted">Photography</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                     <hr>
+                     <li>5GB Storage</li>
+                     <hr>
+                     <li>Mail Support</li>
+                     <hr>
+                     <li>Email support</li>
+                     <hr>
+                     <li>$ 10</li>
+                     <li>per month</li>
+                  </ul>
+                  <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign up </button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="d4">
+         <p class="p4" id="p1"><b> Contact Me </b></p>
+         <form>
+            <p>Do you want me to photograph you? Fill out the form and fill me in with the details :)         </p>
+            <p> I love meeting new people!</p>
+            <div class="form-group">
+               <label for="exampleInputEmail1">Name</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+               <label for="exampleInputPassword1">Email</label>
+               <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
+               <label for="exampleInputPassword1">Message</label>
+               <input type="password" class="form-control" id="exampleInputPassword2">
+            </div>
+            <button type="submit" class="btn btn-dark w-100">send message</button>
+         </form>
+      </div>
+      <div class="d5">
+         <div class="grid2">
+            <div>
+               <p class="p5">INFO</p>
+               <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+            <div>
+               <p class="p5"> BLOG POSTS</p>
+               <section class="s1">
+                  <img src="photo/99.jpg" class="img4">Lorem Sed mattis nunc
+               </section>
+               <hr>
+               <section class="s1">
+                  <img src="photo/107.jpg" class="img4">Lorem Sed mattis nunc
+               </section>
+            </div>
+            <div>
+               <p class="p5">POPULAR TAGS</p>
+               <div class="grid3">
+                  <div class="d6">Travel</div>
+                  <div class="d6">NewYork</div>
+                  <div class="d6">London</div>
+                  <div class="d6">IKEA</div>
+                  <div class="d6">NORWAY</div>
+                  <div class="d6">DIY</div>
+                  <div class="d6">Ideas</div>
+                  <div class="d6">Baby</div>
+                  <div class="d6">Family</div>
+                  <div class="d6">News</div>
+                  <div class="d6">Sports</div>
+                  <div class="d6">Shopping</div>
+                  <div class="d6">Clothing</div>
+                  <div class="d6">Games</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <nav class="n3">
+         <h1>Powered by <a href="#"> <b> MAHMOUD ELBOUSHY </b>  </a> </h1>
+      </nav>
+      <script>
+         function show(){
+         document.getElementById("d2").style.display="block";
+         document.getElementById("n1").style.zIndex="5";
+         }
+         function a1(){
+             document.getElementById("d2").style.display="none";
+         }
+         function a2(){
+             
+             document.getElementById("d2").style.display="none";
+         }
+         function a3(){
+             
+             document.getElementById("d2").style.display="none";
+         } 
+         function no(){
+             
+             document.getElementById("d2").style.display="none";
+         }
+         function img1(){
+             
+             document.getElementById("d6").style.display="block";
+             
+             
+         }
+         function img2(){
+             
+             document.getElementById("d7").style.display="block";
+             
+             
+         }
+         function img3(){
+             
+             document.getElementById("d8").style.display="block";
+             
+             
+         }
+         function img4(){
+             
+             document.getElementById("d9").style.display="block";
+             
+             
+         }
+         function img5(){
+             
+             document.getElementById("d10").style.display="block";
+             
+             
+         }
+         function img6(){
+             
+             document.getElementById("d11").style.display="block";
+             
+             
+         }
+         function img7(){
+             
+             document.getElementById("d12").style.display="block";
+             
+             
+         }
+         function img8(){
+             
+             document.getElementById("d13").style.display="block";
+             
+             
+         }
+         function img9(){
+             
+             document.getElementById("d14").style.display="block";
+             
+             
+         }
+         function img10(){
+             
+             document.getElementById("d15").style.display="block";
+             
+             
+         }
+         function img11(){
+             
+             document.getElementById("d16").style.display="block";
+             
+             
+         }
+         function img12(){
+             
+             document.getElementById("d17").style.display="block";
+             
+             
+         } 
+           function no1(){
+         
+          document.getElementById("d6").style.display="none";
+         }
+         function no2(){
+         
+          document.getElementById("d7").style.display="none";
+         }
+         function no3(){
+         
+          document.getElementById("d8").style.display="none";
+         }
+         function no4(){
+         
+          document.getElementById("d9").style.display="none";
+         }
+         function no5(){
+         
+          document.getElementById("d10").style.display="none";
+         }
+         function no6(){
+         
+          document.getElementById("d11").style.display="none";
+         }
+         function no7(){
+         
+          document.getElementById("d12").style.display="none";
+         }
+         function no8(){
+         
+          document.getElementById("d13").style.display="none";
+         }
+         function no9(){
+         
+          document.getElementById("d14").style.display="none";
+         }
+         function no10(){
+         
+          document.getElementById("d15").style.display="none";
+         }
+         function no11(){
+         
+          document.getElementById("d16").style.display="none";
+         }
+         function no12(){
+         
+          document.getElementById("d17").style.display="none";
+         }
+         
+         
+      </script>
+      <script src="js/jquery-3.5.1.slim.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>																
+   </body>
+</html>
